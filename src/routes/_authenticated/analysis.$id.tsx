@@ -51,7 +51,7 @@ function AnalysisPage() {
 
   async function apply() {
     const { error } = await supabase.from("analyses").update({ applied: true }).eq("id", id);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     toast.success("Shared with the recruiter");
     qc.invalidateQueries({ queryKey: ["analyses", id] });
   }

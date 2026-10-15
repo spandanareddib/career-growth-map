@@ -11,7 +11,7 @@ const MAP: Record<string, { label: string; cls: string; spin?: boolean }> = {
 };
 
 export function StatusPill({ status }: { status: string }) {
-  const s = MAP[status] ?? MAP.queued;
+  const s = MAP[status] ?? MAP["queued"]!;
   const Icon = s.spin ? Loader2 : status === "done" ? Check : status === "failed" ? X : Clock;
   return (
     <span className={cn("inline-flex items-center gap-1 rounded-full border-2 border-foreground px-2 py-0.5 font-mono text-[11px]", s.cls)}>

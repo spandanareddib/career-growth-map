@@ -2,7 +2,7 @@ import { unzipSync, strFromU8 } from "fflate";
 
 /** Extracts plain text from a .docx file (runs in the Worker; pure JS). */
 export function docxToText(bytes: Uint8Array): string {
-  const files = unzipSync(bytes, { filter: (f) => f.name === "word/document.xml" });
+  const files = unzipSync(bytes, { filter: (f: { name: string }) => f.name === "word/document.xml" });
   const xml = files["word/document.xml"];
   if (!xml) throw new Error("This DOCX file has no readable document body.");
   return strFromU8(xml)

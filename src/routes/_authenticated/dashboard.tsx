@@ -99,7 +99,7 @@ function JobForm({ userId, recruiter, onDone }: { userId: string; recruiter: boo
   const [busy, setBusy] = useState(false);
   async function save(e: React.FormEvent) {
     e.preventDefault();
-    if (desc.trim().length < 50) return toast.error("Paste the full job description (at least 50 characters).");
+    if (desc.trim().length < 50) { toast.error("Paste the full job description (at least 50 characters)."); return; }
     setBusy(true);
     const { error } = await supabase.from("jobs").insert({
       owner_id: userId,
@@ -109,7 +109,7 @@ function JobForm({ userId, recruiter, onDone }: { userId: string; recruiter: boo
       is_public: recruiter && pub,
     });
     setBusy(false);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     qc.invalidateQueries({ queryKey: ["jobs"] });
     onDone();
   }
@@ -174,8 +174,8 @@ function SeekerView({ userId }: { userId: string }) {
   }
 
   async function upload(file: File) {
-    if (!(file.type in ACCEPT)) return toast.error("Please upload a PDF or DOCX file.");
-    if (file.size > 10 * 1024 * 1024) return toast.error("Max file size is 10 MB.");
+    if (!(file.type in ACCEPT)) { toast.error("Please upload a PDF or DOCX file."); return; }
+    if (file.size > 10 * 1024 * 1024) { toast.error("Max file size is 10 MB."); return; }
     setUploading(true);
     try {
       const path = `${userId}/${crypto.randomUUID()}.${ACCEPT[file.type as keyof typeof ACCEPT]}`;
@@ -205,7 +205,7 @@ function SeekerView({ userId }: { userId: string }) {
   }
 
   async function compare(jobId: string) {
-    if (!activeResume) return toast.error("Upload a resume and wait until it's ready.");
+    if (!activeResume) { toast.error("Upload a resume and wait until it's ready."); return; }
     setRunning(jobId);
     try {
       await analyze({ data: { resumeId: activeResume, jobId } });
