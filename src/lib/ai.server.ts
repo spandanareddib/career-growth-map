@@ -36,7 +36,8 @@ export async function structuredCall<T>(schema: z.ZodType<T>, system: string, me
   let streamError: unknown;
   const result = streamText({
     model: provider.responses(MODEL),
-    messages: [{ role: "system", content: system }, ...messages],
+    instructions: system,
+    messages,
     output: Output.object({ schema }),
     maxRetries: 1,
     onError: ({ error }) => {
