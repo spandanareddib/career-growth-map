@@ -101,6 +101,24 @@ export type Database = {
         }
         Relationships: []
       }
+      learned_skills: {
+        Row: {
+          learned_at: string
+          skill: string
+          user_id: string
+        }
+        Insert: {
+          learned_at?: string
+          skill: string
+          user_id: string
+        }
+        Update: {
+          learned_at?: string
+          skill?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -178,6 +196,41 @@ export type Database = {
           user_id?: string
         }
         Relationships: []
+      }
+      workforce_snapshots: {
+        Row: {
+          created_at: string
+          id: string
+          profile: Json
+          resume_id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          profile: Json
+          resume_id: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          profile?: Json
+          resume_id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "workforce_snapshots_resume_id_fkey"
+            columns: ["resume_id"]
+            isOneToOne: true
+            referencedRelation: "resumes"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {
