@@ -23,6 +23,7 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
       { name: "description", content: "Track resume uploads, job matches and learning paths." },
       { property: "og:title", content: "Dashboard — SkillPath" },
       { property: "og:description", content: "Track resume uploads, job matches and learning paths." },
+      { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Dashboard,
@@ -40,7 +41,7 @@ function useLiveData(userId: string | undefined) {
     const ch = supabase
       .channel("dash-" + userId)
       .on("postgres_changes", { event: "*", schema: "public", table: "resumes", filter: `user_id=eq.${userId}` }, () =>
-        qc.invalidateQueries({ queryKey: ["resumes"] }),
+        { qc.invalidateQueries({ queryKey: ["resumes"] }); qc.invalidateQueries({ queryKey: ["workforce"] }); },
       )
       .on("postgres_changes", { event: "*", schema: "public", table: "analyses" }, () =>
         qc.invalidateQueries({ queryKey: ["analyses"] }),
@@ -170,7 +171,7 @@ function SeekerView({ userId }: { userId: string }) {
     process({ data: { resumeId: id } })
       .then((r) => (r.ok ? toast.success("Resume parsed") : toast.error(r.error)))
       .catch((e) => toast.error(e.message))
-      .finally(() => qc.invalidateQueries({ queryKey: ["resumes"] }));
+      .finally(() => { qc.invalidateQueries({ queryKey: ["resumes"] }); qc.invalidateQueries({ queryKey: ["workforce"] }); });
   }
 
   async function upload(file: File) {
@@ -210,6 +211,7 @@ function SeekerView({ userId }: { userId: string }) {
     try {
       await analyze({ data: { resumeId: activeResume, jobId } });
       qc.invalidateQueries({ queryKey: ["analyses"] });
+      qc.invalidateQueries({ queryKey: ["workforce"] });
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Analysis failed");
     } finally {

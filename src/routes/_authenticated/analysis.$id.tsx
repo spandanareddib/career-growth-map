@@ -9,6 +9,9 @@ import { Button } from "@/components/ui/button";
 import { useMe } from "@/lib/app";
 import type { GapAnalysis } from "@/lib/schemas";
 import { cn } from "@/lib/utils";
+import { LearningCompletion } from "@/components/LearningCompletion";
+import { learnedOptions } from "@/lib/workforce";
+import { learningProgress, skillKey } from "@/lib/skills";
 
 export const Route = createFileRoute("/_authenticated/analysis/$id")({
   head: () => ({
@@ -17,6 +20,7 @@ export const Route = createFileRoute("/_authenticated/analysis/$id")({
       { name: "description", content: "Matched, partial and missing skills with an ordered learning path." },
       { property: "og:title", content: "Skill gap analysis — SkillPath" },
       { property: "og:description", content: "Matched, partial and missing skills with an ordered learning path." },
+      { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AnalysisPage,
@@ -32,6 +36,7 @@ function AnalysisPage() {
   const { id } = Route.useParams();
   const { data: me } = useMe();
   const qc = useQueryClient();
+  const learned = useQuery({ ...learnedOptions, enabled: !!me });
   const q = useQuery({
     queryKey: ["analyses", id],
     queryFn: async () => {
@@ -56,7 +61,9 @@ function AnalysisPage() {
     qc.invalidateQueries({ queryKey: ["analyses", id] });
   }
 
-  const totalWeeks = r?.learning_path.reduce((s, x) => s + (x.estimated_weeks || 0), 0) ?? 0;
+  const learnedNames = isOwner ? (learned.data ?? []).map(s => s.skill) : [];
+  const progress = learningProgress(r?.learning_path ?? [], learnedNames);
+  const totalWeeks = progress.remainingWeeks;
 
   return (
     <div className="min-h-screen dot-grid">
@@ -125,8 +132,10 @@ function AnalysisPage() {
                 <section className="brut bg-card p-5">
                   <div className="mb-5 flex items-center justify-between">
                     <h2 className="text-lg font-bold">Your learning path</h2>
-                    <span className="font-mono text-xs">{r.learning_path.length} steps · ~{totalWeeks} weeks</span>
+                    <span className="font-mono text-xs">{isOwner ? `${progress.completed}/${r.learning_path.length} completed · ` : `${r.learning_path.length} steps · `}~{totalWeeks} weeks{isOwner ? " remaining" : ""}</span>
                   </div>
+                  {isOwner && learned.isError && <p className="mb-3 text-sm text-destructive">Learning progress could not be loaded.</p>}
+                  {isOwner && r.learning_path.length > 0 && <progress aria-label="Learning progress" value={progress.completed} max={r.learning_path.length} className="mb-5 h-2 w-full accent-primary" />}
                   {r.learning_path.length === 0 ? (
                     <p className="text-sm">No gaps — you cover everything this job asks for.</p>
                   ) : (
@@ -134,7 +143,7 @@ function AnalysisPage() {
                       {r.learning_path.map((step, i) => (
                         <li key={step.skill} className="relative">
                           <span className="brut-sm absolute -left-[2.85rem] flex size-9 items-center justify-center rounded-full bg-accent font-display font-extrabold">{i + 1}</span>
-                          <div className="brut-sm bg-background p-4">
+                          <div className={cn("brut-sm p-4", learnedNames.some(s => skillKey(s) === skillKey(step.skill)) ? "bg-success" : "bg-background")}>
                             <div className="flex flex-wrap items-center justify-between gap-2">
                               <h3 className="text-base font-bold">{step.skill}</h3>
                               <span className="rounded-full border-2 border-foreground bg-info px-2 font-mono text-[11px]">~{step.estimated_weeks} wk</span>
@@ -154,6 +163,7 @@ function AnalysisPage() {
                                 <li key={res.title} className="flex items-center gap-1"><BookOpen className="size-3" /> {res.title} <span className="text-muted-foreground">({res.kind})</span></li>
                               ))}
                             </ul>
+                            {isOwner && me && <LearningCompletion skill={step.skill} userId={me.id} />}
                           </div>
                         </li>
                       ))}

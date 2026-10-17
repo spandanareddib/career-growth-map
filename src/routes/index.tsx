@@ -10,6 +10,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Upload your resume, add jobs you want, and get a skill gap analysis with a step-by-step learning path." },
       { property: "og:title", content: "SkillPath — know exactly what to learn next" },
       { property: "og:description", content: "Smart resume-to-job matching with an ordered learning path." },
+      { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -32,7 +33,7 @@ function Index() {
         <section className="mx-auto max-w-3xl text-center">
           <span className="brut-sm inline-block bg-accent px-3 py-1 font-mono text-xs">for job seekers & recruiters</span>
           <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] sm:text-6xl">
-            See what's missing.<br />Learn it in the right order.
+            WorkTwin AI
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
             Compare your resume with the jobs you want and get a clear skill gap analysis plus a step-by-step learning path.

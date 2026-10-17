@@ -8,7 +8,7 @@ import { useMe } from "@/lib/app";
 export function Logo() {
   return (
     <Link to="/" className="font-display text-xl font-extrabold tracking-tight">
-      Skill<span className="text-primary [-webkit-text-stroke:1px_var(--foreground)]">Path</span>
+      WorkTwin <span className="text-primary [-webkit-text-stroke:1px_var(--foreground)]">AI</span>
     </Link>
   );
 }
@@ -25,8 +25,9 @@ export function AppHeader() {
   }
   return (
     <header className="border-b-2 border-foreground bg-card">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
         <Logo />
+        <nav className="flex gap-1" aria-label="Workspace"><Button asChild variant="ghost" size="sm"><Link to="/dashboard">Dashboard</Link></Button><Button asChild variant="ghost" size="sm"><Link to="/graph">Knowledge graph</Link></Button></nav>
         <div className="flex items-center gap-3">
           {me && (
             <span className="hidden rounded-full border-2 border-foreground bg-secondary px-3 py-0.5 font-mono text-xs sm:inline">

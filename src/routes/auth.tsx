@@ -17,6 +17,7 @@ export const Route = createFileRoute("/auth")({
       { name: "description", content: "Sign in or create a SkillPath account as a job seeker or recruiter." },
       { property: "og:title", content: "Sign in — SkillPath" },
       { property: "og:description", content: "Sign in or create a SkillPath account." },
+      { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AuthPage,
