@@ -22,7 +22,7 @@ export const workforceOptions = queryOptions({ queryKey: ["workforce"], queryFn:
 export type GraphNode = { id: string; label: string; kind: "skill" | "job" | "trend"; evidence: string[]; learned?: boolean; url?: string };
 export type GraphEdge = { from: string; to: string; label: string };
 
-export function buildWorkforceGraph(data: Awaited<ReturnType<typeof workforceOptions.queryFn & (() => Promise<never>)>> | { snapshots: { profile: unknown }[]; jobs: { id: string; title: string; description: string }[]; analyses: { job_id: string; result: unknown }[] }, learned: string[]) {
+export function buildWorkforceGraph(data: { snapshots: { profile: unknown }[]; jobs: { id: string; title: string; description: string }[]; analyses: { job_id: string; result: unknown }[] }, learned: string[]) {
   const nodes = new Map<string, GraphNode>();
   const edges: GraphEdge[] = [];
   const edge = (from: string, to: string, label: string) => { if (!edges.some(e => e.from === from && e.to === to && e.label === label)) edges.push({ from, to, label }); };
