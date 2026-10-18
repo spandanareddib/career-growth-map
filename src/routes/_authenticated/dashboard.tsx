@@ -19,9 +19,9 @@ import type { ResumeProfile } from "@/lib/schemas";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — SkillPath" },
+      { title: "Dashboard — WorkTwin AI" },
       { name: "description", content: "Track resume uploads, job matches and learning paths." },
-      { property: "og:title", content: "Dashboard — SkillPath" },
+      { property: "og:title", content: "Dashboard — WorkTwin AI" },
       { property: "og:description", content: "Track resume uploads, job matches and learning paths." },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -112,6 +112,7 @@ function JobForm({ userId, recruiter, onDone }: { userId: string; recruiter: boo
     setBusy(false);
     if (error) { toast.error(error.message); return; }
     qc.invalidateQueries({ queryKey: ["jobs"] });
+    qc.invalidateQueries({ queryKey: ["workforce"] });
     onDone();
   }
   return (
@@ -203,6 +204,7 @@ function SeekerView({ userId }: { userId: string }) {
     await supabase.from("resumes").delete().eq("id", id);
     qc.invalidateQueries({ queryKey: ["resumes"] });
     qc.invalidateQueries({ queryKey: ["analyses"] });
+    qc.invalidateQueries({ queryKey: ["workforce"] });
   }
 
   async function compare(jobId: string) {

@@ -6,9 +6,9 @@ import { Logo } from "@/components/AppHeader";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SkillPath — know exactly what to learn next" },
+      { title: "WorkTwin AI — know exactly what to learn next" },
       { name: "description", content: "Upload your resume, add jobs you want, and get a skill gap analysis with a step-by-step learning path." },
-      { property: "og:title", content: "SkillPath — know exactly what to learn next" },
+      { property: "og:title", content: "WorkTwin AI — know exactly what to learn next" },
       { property: "og:description", content: "Smart resume-to-job matching with an ordered learning path." },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],

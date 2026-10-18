@@ -16,9 +16,9 @@ import { learningProgress, skillKey } from "@/lib/skills";
 export const Route = createFileRoute("/_authenticated/analysis/$id")({
   head: () => ({
     meta: [
-      { title: "Skill gap analysis — SkillPath" },
+      { title: "Skill gap analysis — WorkTwin AI" },
       { name: "description", content: "Matched, partial and missing skills with an ordered learning path." },
-      { property: "og:title", content: "Skill gap analysis — SkillPath" },
+      { property: "og:title", content: "Skill gap analysis — WorkTwin AI" },
       { property: "og:description", content: "Matched, partial and missing skills with an ordered learning path." },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],

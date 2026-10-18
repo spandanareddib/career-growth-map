@@ -3,13 +3,14 @@ import { Network, Search, ExternalLink, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import type { GraphEdge, GraphNode } from "@/lib/workforce";
+import { LearningCompletion } from "@/components/LearningCompletion";
 
-export function KnowledgeGraph({ nodes, edges }: { nodes: GraphNode[]; edges: GraphEdge[] }) {
+export function KnowledgeGraph({ nodes, edges, userId }: { nodes: GraphNode[]; edges: GraphEdge[]; userId?: string | undefined }) {
   const [selected, setSelected] = useState("");
   const [search, setSearch] = useState("");
   const [kind, setKind] = useState("all");
   const filtered = nodes.filter(n => (kind === "all" || n.kind === kind) && n.label.toLowerCase().includes(search.toLowerCase()));
-  const focus = nodes.find(n => n.id === selected) ?? filtered[0];
+  const focus = filtered.find(n => n.id === selected) ?? filtered.find(n => edges.some(e => e.from === n.id || e.to === n.id)) ?? filtered[0];
   const connections = focus ? edges.filter(e => e.from === focus.id || e.to === focus.id) : [];
   const neighborIds = new Set(connections.flatMap(e => [e.from, e.to]));
   const neighbors = nodes.filter(n => neighborIds.has(n.id) && n.id !== focus?.id).slice(0, 10);
@@ -36,6 +37,7 @@ export function KnowledgeGraph({ nodes, edges }: { nodes: GraphNode[]; edges: Gr
           <div className="flex items-center gap-2"><Network className="size-5" /><h2 className="text-xl font-bold">{focus.label}</h2></div>
           <div className="mt-2 space-y-1 text-sm text-muted-foreground">{focus.evidence.map((e, i) => <p key={i} className="break-words">{e.length > 600 ? e.slice(0, 600) + "…" : e}</p>)}{!focus.evidence.length && <p>Connected through job requirements or technology topics.</p>}</div>
           {focus.url && <a href={focus.url} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-1 text-sm font-semibold underline">Source <ExternalLink className="size-3" /></a>}
+          {focus.kind === "skill" && userId && <div><LearningCompletion skill={focus.label} userId={userId} /></div>}
           <ul className="mt-3 flex flex-wrap gap-2">{connections.map((e, i) => <li key={i} className="rounded border border-foreground bg-secondary px-2 py-1 text-xs">{nodes.find(n => n.id === (e.from === focus.id ? e.to : e.from))?.label} · {e.label}</li>)}</ul>
         </section>}
       </div>
