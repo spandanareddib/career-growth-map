@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import type { GraphEdge, GraphNode } from "@/lib/workforce";
 import { LearningCompletion } from "@/components/LearningCompletion";
 
-export function KnowledgeGraph({ nodes, edges, userId }: { nodes: GraphNode[]; edges: GraphEdge[]; userId?: string }) {
+export function KnowledgeGraph({ nodes, edges, userId }: { nodes: GraphNode[]; edges: GraphEdge[]; userId?: string | undefined }) {
   const [selected, setSelected] = useState("");
   const [search, setSearch] = useState("");
   const [kind, setKind] = useState("all");
