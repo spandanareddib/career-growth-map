@@ -13,10 +13,10 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — SkillPath" },
-      { name: "description", content: "Sign in or create a SkillPath account as a job seeker or recruiter." },
-      { property: "og:title", content: "Sign in — SkillPath" },
-      { property: "og:description", content: "Sign in or create a SkillPath account." },
+      { title: "Sign in — WorkTwin AI" },
+      { name: "description", content: "Sign in or create a WorkTwin AI account as a job seeker or recruiter." },
+      { property: "og:title", content: "Sign in — WorkTwin AI" },
+      { property: "og:description", content: "Sign in or create a WorkTwin AI account." },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
   }),

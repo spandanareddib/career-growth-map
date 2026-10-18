@@ -19,9 +19,9 @@ import type { ResumeProfile } from "@/lib/schemas";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — SkillPath" },
+      { title: "Dashboard — WorkTwin AI" },
       { name: "description", content: "Track resume uploads, job matches and learning paths." },
-      { property: "og:title", content: "Dashboard — SkillPath" },
+      { property: "og:title", content: "Dashboard — WorkTwin AI" },
       { property: "og:description", content: "Track resume uploads, job matches and learning paths." },
       { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
     ],
