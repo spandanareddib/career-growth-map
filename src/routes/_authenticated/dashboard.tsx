@@ -112,6 +112,7 @@ function JobForm({ userId, recruiter, onDone }: { userId: string; recruiter: boo
     setBusy(false);
     if (error) { toast.error(error.message); return; }
     qc.invalidateQueries({ queryKey: ["jobs"] });
+    qc.invalidateQueries({ queryKey: ["workforce"] });
     onDone();
   }
   return (
@@ -203,6 +204,7 @@ function SeekerView({ userId }: { userId: string }) {
     await supabase.from("resumes").delete().eq("id", id);
     qc.invalidateQueries({ queryKey: ["resumes"] });
     qc.invalidateQueries({ queryKey: ["analyses"] });
+    qc.invalidateQueries({ queryKey: ["workforce"] });
   }
 
   async function compare(jobId: string) {

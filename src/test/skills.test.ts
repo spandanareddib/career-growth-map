@@ -3,8 +3,9 @@ import { canonicalProfile, canonicalSkill, learningProgress, reconcileMatching, 
 import { buildWorkforceGraph } from "@/lib/workforce";
 import type { GapAnalysis, ResumeProfile } from "@/lib/schemas";
 
+const postgresSkill: ResumeProfile["skills"][number] = { name: "Postgres", category: "Data", proficiency: "intermediate", years: 2, evidence: "Built Postgres services" };
 const profile: ResumeProfile = { candidate_name: "Test", headline: "Engineer", summary: "", total_years_experience: 2,
-  skills: [{ name: "Postgres", category: "Data", proficiency: "intermediate", years: 2, evidence: "Built Postgres services" }], experience: [], education: [] };
+  skills: [postgresSkill], experience: [], education: [] };
 const result: GapAnalysis = { match_score: 0, verdict: "", strengths: [], requirements: [
   { skill: "PostgreSQL", importance: "must_have", status: "missing", resume_evidence: null, note: "" },
 ], learning_path: [{ skill: "Postgre SQL", why_now: "", builds_on: [], estimated_weeks: 3, milestone_project: "", resources: [] },
@@ -28,17 +29,17 @@ describe("Canonical skill matching", () => {
     expect(skillKey("C#")).not.toBe(skillKey("C++"));
   });
   it("merges duplicate equivalent resume skills", () => {
-    expect(canonicalProfile({ ...profile, skills: [...profile.skills, { ...profile.skills[0], name: "PostgreSQL" }] }).skills).toHaveLength(1);
+    expect(canonicalProfile({ ...profile, skills: [...profile.skills, { ...postgresSkill, name: "PostgreSQL" }] }).skills).toHaveLength(1);
   });
   it("never leaves an evidenced equivalent skill missing and conservatively checks depth", () => {
     const fixed = reconcileMatching(result, profile);
-    expect(fixed.requirements[0].status).toBe("partial");
-    expect(fixed.requirements[0].resume_evidence).toBe("Built Postgres services");
+    expect(fixed.requirements[0]?.status).toBe("partial");
+    expect(fixed.requirements[0]?.resume_evidence).toBe("Built Postgres services");
     expect(fixed.match_score).toBe(50);
   });
   it("does not infer a competency from a similar job title", () => {
     const titleOnly = { ...profile, skills: [], experience: [{ title: "Senior Software Developer", company: "Test", duration: "2 years", highlights: [] }] };
-    expect(reconcileMatching(result, titleOnly).requirements[0].status).toBe("missing");
+    expect(reconcileMatching(result, titleOnly).requirements[0]?.status).toBe("missing");
   });
 });
 describe("Learning progress and workforce evolution", () => {
@@ -48,10 +49,10 @@ describe("Learning progress and workforce evolution", () => {
     expect(learningProgress(result.learning_path, [])).toEqual({ completed: 0, remainingWeeks: 7 });
   });
   it("keeps evidence across uploads while merging aliases in the graph", () => {
-    const graph = buildWorkforceGraph({ snapshots: [{ profile }, { profile: { ...profile, skills: [{ ...profile.skills[0], name: "PostgreSQL", evidence: "New project evidence" }] } }], jobs: [], analyses: [] }, []);
+    const graph = buildWorkforceGraph({ snapshots: [{ profile }, { profile: { ...profile, skills: [{ ...postgresSkill, name: "PostgreSQL", evidence: "New project evidence" }] } }], jobs: [], analyses: [] }, []);
     const postgres = graph.nodes.filter(n => n.label === "PostgreSQL");
     expect(postgres).toHaveLength(1);
-    expect(postgres[0].evidence).toEqual(["Built Postgres services", "New project evidence"]);
+    expect(postgres[0]?.evidence).toEqual(["Built Postgres services", "New project evidence"]);
   });
   it("connects real job requirements, learning prerequisites and learned aliases", () => {
     const graph = buildWorkforceGraph({ snapshots: [], jobs: [{ id: "j1", title: "Engineer", description: "Postgres" }], analyses: [{ job_id: "j1", result }] }, ["Postgres"]);
