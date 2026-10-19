@@ -25,6 +25,7 @@ export type Database = {
           result: Json | null
           resume_id: string
           score: number | null
+          scorer_version: string
           status: string
           user_id: string
         }
@@ -38,6 +39,7 @@ export type Database = {
           result?: Json | null
           resume_id: string
           score?: number | null
+          scorer_version?: string
           status?: string
           user_id: string
         }
@@ -51,6 +53,7 @@ export type Database = {
           result?: Json | null
           resume_id?: string
           score?: number | null
+          scorer_version?: string
           status?: string
           user_id?: string
         }
@@ -119,6 +122,96 @@ export type Database = {
         }
         Relationships: []
       }
+      learning_activities: {
+        Row: {
+          completed_at: string | null
+          created_at: string
+          evidence_url: string | null
+          id: string
+          issuer: string | null
+          kind: string
+          resource_url: string | null
+          skill: string
+          status: string
+          title: string
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string | null
+          created_at?: string
+          evidence_url?: string | null
+          id?: string
+          issuer?: string | null
+          kind: string
+          resource_url?: string | null
+          skill: string
+          status?: string
+          title: string
+          user_id: string
+        }
+        Update: {
+          completed_at?: string | null
+          created_at?: string
+          evidence_url?: string | null
+          id?: string
+          issuer?: string | null
+          kind?: string
+          resource_url?: string | null
+          skill?: string
+          status?: string
+          title?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      market_observations: {
+        Row: {
+          complete: boolean
+          coverage_key: string
+          geography: string
+          id: string
+          observed_at: string
+          period_end: string
+          period_start: string
+          postings: number
+          skill: string
+          source: string
+          source_url: string
+          taxonomy_version: string
+          total_postings: number
+        }
+        Insert: {
+          complete?: boolean
+          coverage_key: string
+          geography?: string
+          id?: string
+          observed_at?: string
+          period_end: string
+          period_start: string
+          postings: number
+          skill: string
+          source: string
+          source_url: string
+          taxonomy_version: string
+          total_postings: number
+        }
+        Update: {
+          complete?: boolean
+          coverage_key?: string
+          geography?: string
+          id?: string
+          observed_at?: string
+          period_end?: string
+          period_start?: string
+          postings?: number
+          skill?: string
+          source?: string
+          source_url?: string
+          taxonomy_version?: string
+          total_postings?: number
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -137,6 +230,63 @@ export type Database = {
         }
         Relationships: []
       }
+      readiness_history: {
+        Row: {
+          analysis_id: string
+          completed_steps: number
+          created_at: string
+          id: string
+          job_id: string
+          match_score: number | null
+          remaining_weeks: number
+          scorer_version: string
+          source: string
+          total_steps: number
+          user_id: string
+        }
+        Insert: {
+          analysis_id: string
+          completed_steps: number
+          created_at?: string
+          id?: string
+          job_id: string
+          match_score?: number | null
+          remaining_weeks: number
+          scorer_version: string
+          source: string
+          total_steps: number
+          user_id: string
+        }
+        Update: {
+          analysis_id?: string
+          completed_steps?: number
+          created_at?: string
+          id?: string
+          job_id?: string
+          match_score?: number | null
+          remaining_weeks?: number
+          scorer_version?: string
+          source?: string
+          total_steps?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "readiness_history_analysis_id_fkey"
+            columns: ["analysis_id"]
+            isOneToOne: false
+            referencedRelation: "analyses"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "readiness_history_job_id_fkey"
+            columns: ["job_id"]
+            isOneToOne: false
+            referencedRelation: "jobs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       resumes: {
         Row: {
           created_at: string
@@ -146,6 +296,7 @@ export type Database = {
           id: string
           mime_type: string
           parsed: Json | null
+          profile_id: string | null
           progress_note: string | null
           status: string
           updated_at: string
@@ -159,6 +310,7 @@ export type Database = {
           id?: string
           mime_type: string
           parsed?: Json | null
+          profile_id?: string | null
           progress_note?: string | null
           status?: string
           updated_at?: string
@@ -172,12 +324,21 @@ export type Database = {
           id?: string
           mime_type?: string
           parsed?: Json | null
+          profile_id?: string | null
           progress_note?: string | null
           status?: string
           updated_at?: string
           user_id?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "resumes_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       user_roles: {
         Row: {
@@ -243,6 +404,10 @@ export type Database = {
           _user_id: string
         }
         Returns: boolean
+      }
+      record_readiness: {
+        Args: { _source: string; _user: string }
+        Returns: undefined
       }
     }
     Enums: {
