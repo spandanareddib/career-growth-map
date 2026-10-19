@@ -1,0 +1,9 @@
+{
+  "version": "synthetic-calibration-v1",
+  "weights": [
+    100.0,
+    50.0,
+    0.0
+  ],
+  "accepted": true
+}
