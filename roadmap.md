@@ -4,3 +4,8 @@
 - [x] Add shared knowledge graph explorer with skill, job, and clearly sourced trend relationships (curated topics, not live market growth).
 - [x] Add learning completion tracking to analysis paths.
 - [x] Verify authenticated graph, fresh DOCX parsing, AI analysis, progress persistence, tests, and page metadata.
+- [ ] Add learning portal with course, practice-project and certification records, connected to graph progress.
+- [ ] Replace curated graph topics with sourced India posting-growth measurements (blocked pending a licensed historical data source).
+- [ ] Build labeled synthetic resume–job dataset; train and evaluate a versioned match scorer with held-out cases.
+- [ ] Verify PDF upload, recruiter job posting, candidate application and recruiter shared-match visibility, including privacy checks.
+- [ ] Connect resume history to the persistent profile; track projects, certifications and versioned readiness over time.
