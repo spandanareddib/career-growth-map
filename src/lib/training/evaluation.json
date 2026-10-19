@@ -1,0 +1,18 @@
+{
+  "version": "synthetic-calibration-v1",
+  "train_pairs": 96,
+  "held_out_pairs": 48,
+  "train_families": [
+    "backend",
+    "frontend",
+    "data",
+    "platform"
+  ],
+  "held_out_families": [
+    "ml",
+    "mobile"
+  ],
+  "held_out_mae": 7.105427357601002e-15,
+  "baseline_mae": 0.0,
+  "limitations": "Synthetic rubric calibration only. Not real hiring accuracy; extraction and gap detection are not evaluated by score MAE."
+}

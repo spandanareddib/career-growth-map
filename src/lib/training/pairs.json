@@ -1,0 +1,5618 @@
+[
+  {
+    "id": "backend-0",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-1",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-2",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-3",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-4",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-5",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-6",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-7",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-8",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-9",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-10",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-11",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-12",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-13",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-14",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-15",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-16",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-17",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-18",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-19",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-20",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "backend-21",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "backend-22",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "backend-23",
+    "family": "backend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-0",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-1",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-2",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-3",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-4",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-5",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-6",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-7",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-8",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-9",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-10",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-11",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-12",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-13",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-14",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-15",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-16",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-17",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-18",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-19",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-20",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "frontend-21",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "frontend-22",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "frontend-23",
+    "family": "frontend",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-0",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-1",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-2",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-3",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-4",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-5",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-6",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-7",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-8",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-9",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-10",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-11",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-12",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-13",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-14",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-15",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-16",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-17",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-18",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-19",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-20",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "data-21",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "data-22",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "data-23",
+    "family": "data",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-0",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-1",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-2",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-3",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-4",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-5",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-6",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-7",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-8",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-9",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-10",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-11",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-12",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-13",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-14",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-15",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-16",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-17",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-18",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-19",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-20",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "platform-21",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "platform-22",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "platform-23",
+    "family": "platform",
+    "split": "train",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-0",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-1",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-2",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-3",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-4",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-5",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-6",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-7",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-8",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-9",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-10",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-11",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-12",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-13",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-14",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-15",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-16",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-17",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-18",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-19",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-20",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "ml-21",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "ml-22",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "ml-23",
+    "family": "ml",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-0",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-1",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-2",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-3",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-4",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-5",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-6",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-7",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-8",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-9",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-10",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-11",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-12",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-13",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-14",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-15",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-16",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-17",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-18",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-19",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-20",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  },
+  {
+    "id": "mobile-21",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "Postgres",
+        "k8s"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        }
+      ]
+    },
+    "known_score": 60.0
+  },
+  {
+    "id": "mobile-22",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Senior Software Engineer",
+      "skills": [
+        "Postgres",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using Postgres."
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 40.0
+  },
+  {
+    "id": "mobile-23",
+    "family": "mobile",
+    "split": "test",
+    "resume": {
+      "headline": "Sr. Software Developer",
+      "skills": [
+        "k8s",
+        "ReactJS"
+      ]
+    },
+    "job": {
+      "title": "Senior Software Engineer",
+      "requirements": [
+        {
+          "skill": "PostgreSQL",
+          "importance": "must_have",
+          "status": "missing",
+          "depth": "plain",
+          "evidence": null
+        },
+        {
+          "skill": "Kubernetes",
+          "importance": "must_have",
+          "status": "matched",
+          "depth": "plain",
+          "evidence": "Built a fictional project using k8s."
+        },
+        {
+          "skill": "React",
+          "importance": "nice_to_have",
+          "status": "partial",
+          "depth": "professional",
+          "evidence": "Built a fictional project using ReactJS."
+        }
+      ]
+    },
+    "known_score": 50.0
+  }
+]
