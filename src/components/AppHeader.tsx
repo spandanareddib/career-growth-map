@@ -27,7 +27,7 @@ export function AppHeader() {
     <header className="border-b-2 border-foreground bg-card">
       <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
         <Logo />
-        <nav className="flex gap-1" aria-label="Workspace"><Button asChild variant="ghost" size="sm"><Link to="/dashboard">Dashboard</Link></Button><Button asChild variant="ghost" size="sm"><Link to="/graph">Knowledge graph</Link></Button></nav>
+        <nav className="flex flex-wrap gap-1" aria-label="Workspace"><Button asChild variant="ghost" size="sm"><Link to="/dashboard">Dashboard</Link></Button><Button asChild variant="ghost" size="sm"><Link to="/graph">Knowledge graph</Link></Button><Button asChild variant="ghost" size="sm"><Link to="/learning">Learning</Link></Button><Button asChild variant="ghost" size="sm"><Link to="/profile">My twin</Link></Button></nav>
         <div className="flex items-center gap-3">
           {me && (
             <span className="hidden rounded-full border-2 border-foreground bg-secondary px-3 py-0.5 font-mono text-xs sm:inline">

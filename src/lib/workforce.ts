@@ -1,6 +1,7 @@
 import { supabase } from "@/integrations/supabase/client";
 import { queryOptions } from "@tanstack/react-query";
-import { canonicalSkill, skillKey, TECH_TOPICS } from "./skills";
+import { canonicalSkill, skillKey } from "./skills";
+import { marketGrowth, type MarketObservation } from "./learning";
 import { resumeProfileSchema, gapAnalysisSchema } from "./schemas";
 
 export const learnedOptions = queryOptions({ queryKey: ["learned-skills"], queryFn: async () => {
@@ -19,10 +20,10 @@ export const workforceOptions = queryOptions({ queryKey: ["workforce"], queryFn:
   return { snapshots: snapshots.data ?? [], jobs: jobs.data ?? [], analyses: analyses.data ?? [] };
 } });
 
-export type GraphNode = { id: string; label: string; kind: "skill" | "job" | "trend"; evidence: string[]; learned?: boolean; url?: string };
+export type GraphNode = { id: string; label: string; kind: "skill" | "job" | "trend" | "project" | "certification" | "course"; evidence: string[]; learned?: boolean; url?: string };
 export type GraphEdge = { from: string; to: string; label: string };
 
-export function buildWorkforceGraph(data: { snapshots: { profile: unknown }[]; jobs: { id: string; title: string; description: string }[]; analyses: { job_id: string; result: unknown }[] }, learned: string[]) {
+export function buildWorkforceGraph(data: { snapshots: { profile: unknown }[]; jobs: { id: string; title: string; description: string }[]; analyses: { job_id: string; result: unknown }[] }, learned: string[], activities: { id:string;skill:string;kind:string;title:string;status:string;evidence_url:string|null }[] = [], market:MarketObservation[] = []) {
   const nodes = new Map<string, GraphNode>();
   const edges: GraphEdge[] = [];
   const edge = (from: string, to: string, label: string) => { if (!edges.some(e => e.from === from && e.to === to && e.label === label)) edges.push({ from, to, label }); };
@@ -52,10 +53,19 @@ export function buildWorkforceGraph(data: { snapshots: { profile: unknown }[]; j
     for (const r of parsed.data.requirements) edge(skill(r.skill), `job:${analysis.job_id}`, `requires · ${r.status}`);
     for (const step of parsed.data.learning_path) for (const base of step.builds_on) edge(skill(base), skill(step.skill), "builds toward");
   }
-  for (const topic of TECH_TOPICS) {
-    const id = `trend:${topic.name}`;
-    nodes.set(id, { id, label: topic.name, kind: "trend", evidence: [topic.summary, `Curated topic · ${topic.source}`], url: topic.url });
-    for (const name of topic.skills) edge(skill(name), id, "related technology");
+  for (const activity of activities) {
+    if(activity.kind !== 'project' && activity.kind !== 'certification' && activity.kind !== 'course') continue;
+    const id=`activity:${activity.id}`;
+    nodes.set(id,{id,label:activity.title,kind:activity.kind,evidence:[`${activity.status} · self-reported, not independently verified`],learned:activity.status==='completed',...(activity.evidence_url?{url:activity.evidence_url}:{})});
+    edge(skill(activity.skill),id,`${activity.kind} · ${activity.status}`);
+  }
+  for (const current of market) {
+    const previous=market.find(p=>p!==current&&p.period_end<current.period_start&&marketGrowth(current,p));
+    if(!previous)continue;
+    const growth=marketGrowth(current,previous);if(!growth)continue;
+    const id=`trend:${skillKey(current.skill)}`;if(nodes.has(id))continue;
+    nodes.set(id,{id,label:`${current.skill} · ${growth.percent.toFixed(1)}%`,kind:'trend',url:current.source_url,evidence:[`${current.geography} · ${current.source}`,`${previous.period_start}–${previous.period_end}: ${previous.postings} of ${previous.total_postings} postings`,`${current.period_start}–${current.period_end}: ${current.postings} of ${current.total_postings} postings`,`Posting share change: ${growth.shareChange.toFixed(2)} percentage points`,`Updated ${current.observed_at}`]});
+    edge(skill(current.skill),id,'observed posting change');
   }
   return { nodes: [...nodes.values()], edges };
 }

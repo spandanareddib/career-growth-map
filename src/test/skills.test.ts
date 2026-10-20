@@ -31,11 +31,12 @@ describe("Canonical skill matching", () => {
   it("merges duplicate equivalent resume skills", () => {
     expect(canonicalProfile({ ...profile, skills: [...profile.skills, { ...postgresSkill, name: "PostgreSQL" }] }).skills).toHaveLength(1);
   });
-  it("never leaves an evidenced equivalent skill missing and conservatively checks depth", () => {
+  it("matches a plain required equivalent skill with concrete resume evidence", () => {
     const fixed = reconcileMatching(result, profile);
-    expect(fixed.requirements[0]?.status).toBe("partial");
+    expect(fixed.requirements[0]?.status).toBe("matched");
     expect(fixed.requirements[0]?.resume_evidence).toBe("Built Postgres services");
-    expect(fixed.match_score).toBe(50);
+    expect(fixed.match_score).toBe(100);
+    expect(fixed.learning_path.some(s=>skillKey(s.skill)===skillKey('Postgres'))).toBe(false);
   });
   it("does not infer a competency from a similar job title", () => {
     const titleOnly = { ...profile, skills: [], experience: [{ title: "Senior Software Developer", company: "Test", duration: "2 years", highlights: [] }] };

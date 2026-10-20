@@ -14,12 +14,12 @@ export function KnowledgeGraph({ nodes, edges, userId }: { nodes: GraphNode[]; e
   const connections = focus ? edges.filter(e => e.from === focus.id || e.to === focus.id) : [];
   const neighborIds = new Set(connections.flatMap(e => [e.from, e.to]));
   const neighbors = nodes.filter(n => neighborIds.has(n.id) && n.id !== focus?.id).slice(0, 10);
-  const colors = { skill: "bg-success", job: "bg-info", trend: "bg-warning" };
+  const colors = { skill: "bg-success", job: "bg-info", trend: "bg-warning", project:"bg-accent", certification:"bg-secondary", course:"bg-primary" };
   return (
     <div className="grid gap-6 lg:grid-cols-[240px_minmax(0,1fr)]">
       <aside className="min-w-0 space-y-3">
         <div className="relative"><Search className="absolute left-3 top-3 size-4 text-muted-foreground" /><Input aria-label="Search graph" placeholder="Find a skill or role…" value={search} onChange={e => setSearch(e.target.value)} className="bg-card pl-9" /></div>
-        <div className="flex flex-wrap gap-1">{["all", "skill", "job", "trend"].map(k => <Button key={k} size="sm" variant={kind === k ? "default" : "outline"} onClick={() => setKind(k)}>{k === "all" ? "All" : k === "job" ? "Roles" : k === "skill" ? "Skills" : "Topics"}</Button>)}</div>
+        <div className="flex flex-wrap gap-1">{["all", "skill", "job", "trend", "project", "certification", "course"].map(k => <Button key={k} size="sm" variant={kind === k ? "default" : "outline"} onClick={() => setKind(k)}>{k === "all" ? "All" : k === "job" ? "Roles" : k === "skill" ? "Skills" : k === 'trend' ? 'Trends' : k}</Button>)}</div>
         <div className="max-h-96 space-y-1 overflow-y-auto">{filtered.map(n => <Button key={n.id} variant={focus?.id === n.id ? "secondary" : "ghost"} className="h-auto w-full justify-start whitespace-normal py-2 text-left" onClick={() => setSelected(n.id)}><span className={`size-2 shrink-0 rounded-full ${colors[n.kind]}`} />{n.label}{n.learned && <Check className="ml-auto size-3" />}</Button>)}{!filtered.length && <p className="text-sm text-muted-foreground">No matching nodes.</p>}</div>
       </aside>
       <div className="min-w-0">

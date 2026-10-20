@@ -164,6 +164,7 @@ function AnalysisPage() {
                               ))}
                             </ul>
                             {isOwner && me && <LearningCompletion skill={step.skill} userId={me.id} />}
+                            <div className="mt-3"><Button asChild size="sm" variant="outline"><Link to="/learn/$analysisId/$step" params={{analysisId:id,step:String(i)}}>Open learning step <BookOpen /></Link></Button></div>
                           </div>
                         </li>
                       ))}
