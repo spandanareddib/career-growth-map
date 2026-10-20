@@ -19,7 +19,7 @@ describe('Measured India posting comparisons',()=>{
 describe('Synthetic scorer training',()=>{
  it('holds out full families before creating variants',()=>{const train=new Set(pairs.filter(p=>p.split==='train').map(p=>p.family));const held=pairs.filter(p=>p.split==='test');expect(held).toHaveLength(48);expect(held.some(p=>train.has(p.family))).toBe(false);});
  it('learns rubric weights without claiming a better model',()=>{expect(model.weights).toEqual([100,50,0]);expect(model.accepted).toBe(true);});
- it('scores every held-out labeled case within rounding tolerance',()=>{for(const p of pairs.filter(p=>p.split==='test'))expect(calibratedScore(p.job.requirements as GapAnalysis['requirements'])).toBe(Math.round(p.known_score));});
+ it('scores every held-out labeled case within rounding tolerance',()=>{for(const p of pairs.filter(p=>p.split==='test')){const requirements:GapAnalysis['requirements']=p.job.requirements.map(r=>({skill:r.skill,importance:r.importance==='must_have'?'must_have':'nice_to_have',status:r.status==='matched'?'matched':r.status==='partial'?'partial':'missing',resume_evidence:r.evidence,note:r.depth}));expect(calibratedScore(requirements)).toBe(Math.round(p.known_score));}});
 });
 const p:ResumeProfile={candidate_name:null,headline:'Sr. Software Developer',summary:'',skills:[{name:'Postgres',category:'Data',proficiency:'beginner',years:null,evidence:'Completed a Postgres tutorial.'}],experience:[],education:[],total_years_experience:null};
 const r:GapAnalysis={match_score:0,verdict:'',strengths:[],requirements:[{skill:'PostgreSQL',importance:'must_have',status:'missing',resume_evidence:null,note:'Requires 5 years professional production experience.'}],learning_path:[]};
