@@ -27,6 +27,6 @@ pred=np.array([features(r) for r in test])@coef
 truth=np.array([r['known_score'] for r in test]); baseline=np.array([features(r) for r in test])@np.array([100,50,0])
 report={'version':'synthetic-calibration-v1','train_pairs':len(train),'held_out_pairs':len(test),'train_families':families['train'],'held_out_families':families['test'],'held_out_mae':float(np.abs(pred-truth).mean()),'baseline_mae':float(np.abs(baseline-truth).mean()),'limitations':'Synthetic rubric calibration only. Not real hiring accuracy; extraction and gap detection are not evaluated by score MAE.'}
 (out/'pairs.json').write_text(json.dumps(rows,indent=2)+'\n')
-(out/'model.json').write_text(json.dumps({'version':report['version'],'weights':coef.round(8).tolist(),'accepted':report['held_out_mae']<=report['baseline_mae']+1e-8},indent=2)+'\n')
+(out/'model.json').write_text(json.dumps({'version':report['version'],'weights':[0.0 if abs(w)<1e-8 else round(float(w),8) for w in coef],'accepted':report['held_out_mae']<=report['baseline_mae']+1e-8},indent=2)+'\n')
 (out/'evaluation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
