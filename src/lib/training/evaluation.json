@@ -12,7 +12,7 @@
     "ml",
     "mobile"
   ],
-  "held_out_mae": 7.105427357601002e-15,
+  "held_out_mae": 1.1472304587793284e-14,
   "baseline_mae": 0.0,
   "limitations": "Synthetic rubric calibration only. Not real hiring accuracy; extraction and gap detection are not evaluated by score MAE."
 }

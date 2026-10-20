@@ -3,7 +3,7 @@
   "weights": [
     100.0,
     50.0,
-    0.0
+    -0.0
   ],
   "accepted": true
 }
