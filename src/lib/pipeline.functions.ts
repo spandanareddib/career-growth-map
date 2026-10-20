@@ -116,7 +116,6 @@ export const runAnalysis = createServerFn({ method: "POST" })
         },
       ]);
       const result = reconcileMatching(rawResult, profile);
-      const score = Math.max(0, Math.min(100, Math.round(result.match_score)));
       const calibrated=calibratedScore(result.requirements);
       const saved=await supabase.from("analyses").update({ status: "done", score:calibrated, scorer_version:SCORER_VERSION, result: {...result,match_score:calibrated} as unknown as never }).eq("id", row.id);
       if(saved.error)throw saved.error;

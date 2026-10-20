@@ -48,15 +48,16 @@ export function reconcileMatching(result: GapAnalysis, profile: ResumeProfile): 
     const evidence = profile.skills.find(s => skillKey(s.name) === skillKey(req.skill));
     if (req.status === "missing" && evidence) {
       corrected = true;
-      return { ...req, skill: canonicalSkill(req.skill), status: "partial" as const, resume_evidence: evidence.evidence,
-        note: "Equivalent skill evidence found. Required depth or specialization still needs review." };
+      const needsDepth=/years?|senior|expert|advanced|production|professional|speciali[sz]|depth/i.test(req.note+' '+req.skill)||evidence.category==='Self-reported learning';
+      return { ...req, skill: canonicalSkill(req.skill), status: needsDepth ? "partial" as const : "matched" as const, resume_evidence: evidence.evidence,
+        note: needsDepth ? "Equivalent skill evidence found. Required depth or specialization still needs review." : "Equivalent skill supported by resume evidence." };
     }
     return { ...req, skill: canonicalSkill(req.skill) };
   });
   const total = requirements.reduce((n, r) => n + (r.importance === "must_have" ? 2 : 1), 0);
   const points = requirements.reduce((n, r) => n + (r.importance === "must_have" ? 2 : 1) * (r.status === "matched" ? 1 : r.status === "partial" ? 0.5 : 0), 0);
   return { ...result, requirements, match_score: corrected && total ? Math.round(points / total * 100) : result.match_score,
-    learning_path: result.learning_path.map(s => ({ ...s, skill: canonicalSkill(s.skill), builds_on: s.builds_on.map(canonicalSkill) })) };
+    learning_path: result.learning_path.filter(s=>!requirements.some(r=>skillKey(r.skill)===skillKey(s.skill)&&r.status==='matched')).map(s => ({ ...s, skill: canonicalSkill(s.skill), builds_on: s.builds_on.map(canonicalSkill) })) };
 }
 
 export function learningProgress(path: GapAnalysis["learning_path"], learned: string[]) {
