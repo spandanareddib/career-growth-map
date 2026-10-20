@@ -4,6 +4,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { gapAnalysisSchema, resumeProfileSchema, type ResumeProfile } from "./schemas";
 import { docxToText } from "./docx";
 import { canonicalProfile, canonicalSkill, catalogInstructions, reconcileMatching } from "./skills";
+import { calibratedScore, SCORER_VERSION } from './match-scorer';
 
 const RESUME_SYSTEM = `You are an expert technical recruiter. Extract a structured candidate profile from the resume.
 - List every concrete skill (languages, frameworks, tools, methods, domain and soft skills). Normalize names (e.g. "ReactJS" -> "React").
@@ -116,7 +117,9 @@ export const runAnalysis = createServerFn({ method: "POST" })
       ]);
       const result = reconcileMatching(rawResult, profile);
       const score = Math.max(0, Math.min(100, Math.round(result.match_score)));
-      await supabase.from("analyses").update({ status: "done", score, result: result as unknown as never }).eq("id", row.id);
+      const calibrated=calibratedScore(result.requirements);
+      const saved=await supabase.from("analyses").update({ status: "done", score:calibrated, scorer_version:SCORER_VERSION, result: {...result,match_score:calibrated} as unknown as never }).eq("id", row.id);
+      if(saved.error)throw saved.error;
     } catch (e) {
       await supabase
         .from("analyses")

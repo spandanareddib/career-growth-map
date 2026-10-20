@@ -14,7 +14,10 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedGraphRouteImport } from './routes/_authenticated/graph'
+import { Route as AuthenticatedLearningRouteImport } from './routes/_authenticated/learning'
+import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
 import { Route as AuthenticatedAnalysisIdRouteImport } from './routes/_authenticated/analysis.$id'
+import { Route as AuthenticatedLearnAnalysisIdStepRouteImport } from './routes/_authenticated/learn.$analysisId.$step'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,25 +43,47 @@ const AuthenticatedGraphRoute = AuthenticatedGraphRouteImport.update({
   path: '/graph',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedLearningRoute = AuthenticatedLearningRouteImport.update({
+  id: '/learning',
+  path: '/learning',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AuthenticatedAnalysisIdRoute = AuthenticatedAnalysisIdRouteImport.update({
   id: '/analysis/$id',
   path: '/analysis/$id',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedLearnAnalysisIdStepRoute =
+  AuthenticatedLearnAnalysisIdStepRouteImport.update({
+    id: '/learn/$analysisId/$step',
+    path: '/learn/$analysisId/$step',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/graph': typeof AuthenticatedGraphRoute
+  '/learning': typeof AuthenticatedLearningRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/analysis/$id': typeof AuthenticatedAnalysisIdRoute
+  '/learn/$analysisId/$step': typeof AuthenticatedLearnAnalysisIdStepRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/graph': typeof AuthenticatedGraphRoute
+  '/learning': typeof AuthenticatedLearningRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/analysis/$id': typeof AuthenticatedAnalysisIdRoute
+  '/learn/$analysisId/$step': typeof AuthenticatedLearnAnalysisIdStepRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -67,13 +92,32 @@ export interface FileRoutesById {
   '/auth': typeof AuthRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/graph': typeof AuthenticatedGraphRoute
+  '/_authenticated/learning': typeof AuthenticatedLearningRoute
+  '/_authenticated/profile': typeof AuthenticatedProfileRoute
   '/_authenticated/analysis/$id': typeof AuthenticatedAnalysisIdRoute
+  '/_authenticated/learn/$analysisId/$step': typeof AuthenticatedLearnAnalysisIdStepRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/auth' | '/dashboard' | '/graph' | '/analysis/$id'
+  fullPaths:
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/graph'
+    | '/learning'
+    | '/profile'
+    | '/analysis/$id'
+    | '/learn/$analysisId/$step'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/auth' | '/dashboard' | '/graph' | '/analysis/$id'
+  to:
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/graph'
+    | '/learning'
+    | '/profile'
+    | '/analysis/$id'
+    | '/learn/$analysisId/$step'
   id:
     | '__root__'
     | '/'
@@ -81,7 +125,10 @@ export interface FileRouteTypes {
     | '/auth'
     | '/_authenticated/dashboard'
     | '/_authenticated/graph'
+    | '/_authenticated/learning'
+    | '/_authenticated/profile'
     | '/_authenticated/analysis/$id'
+    | '/_authenticated/learn/$analysisId/$step'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -127,11 +174,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedGraphRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/learning': {
+      id: '/_authenticated/learning'
+      path: '/learning'
+      fullPath: '/learning'
+      preLoaderRoute: typeof AuthenticatedLearningRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/profile': {
+      id: '/_authenticated/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof AuthenticatedProfileRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/analysis/$id': {
       id: '/_authenticated/analysis/$id'
       path: '/analysis/$id'
       fullPath: '/analysis/$id'
       preLoaderRoute: typeof AuthenticatedAnalysisIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/learn/$analysisId/$step': {
+      id: '/_authenticated/learn/$analysisId/$step'
+      path: '/learn/$analysisId/$step'
+      fullPath: '/learn/$analysisId/$step'
+      preLoaderRoute: typeof AuthenticatedLearnAnalysisIdStepRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
   }
@@ -140,13 +208,19 @@ declare module '@tanstack/react-router' {
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedGraphRoute: typeof AuthenticatedGraphRoute
+  AuthenticatedLearningRoute: typeof AuthenticatedLearningRoute
+  AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
   AuthenticatedAnalysisIdRoute: typeof AuthenticatedAnalysisIdRoute
+  AuthenticatedLearnAnalysisIdStepRoute: typeof AuthenticatedLearnAnalysisIdStepRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedGraphRoute: AuthenticatedGraphRoute,
+  AuthenticatedLearningRoute: AuthenticatedLearningRoute,
+  AuthenticatedProfileRoute: AuthenticatedProfileRoute,
   AuthenticatedAnalysisIdRoute: AuthenticatedAnalysisIdRoute,
+  AuthenticatedLearnAnalysisIdStepRoute: AuthenticatedLearnAnalysisIdStepRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =
